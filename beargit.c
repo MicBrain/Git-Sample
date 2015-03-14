@@ -260,10 +260,7 @@ int beargit_log() {
 }
 
 
-// ---------------------------------------
-// HOMEWORK 2 
-// ---------------------------------------
-// This adds a check to beargit_commit that ensures we are on the HEAD of a branch.
+
 
 int beargit_commit(const char* msg) {
   char current_branch[BRANCHNAME_SIZE];
