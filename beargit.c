@@ -69,7 +69,7 @@ int beargit_add(const char* filename) {
 
 /* beargit rm <filename>
  * 
- * See "Step 2" in the homework 1 spec.
+ * Removes file filename from the system.
  *
  */
 int beargit_rm(const char* filename) {
