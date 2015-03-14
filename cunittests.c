@@ -18,9 +18,6 @@ int init_suite(void)
     return 0;
 }
 
-/* You can also delete leftover files after a test suite runs, but there's
- * no need to duplicate code between this and init_suite 
- */
 int clean_suite(void)
 {
     return 0;
