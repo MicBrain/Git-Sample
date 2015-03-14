@@ -36,8 +36,6 @@ int main(int argc, char **argv) {
         return 2;
     }
 
-    // TODO: If students aren't going to write this themselves, replace by clean
-    // implementation using function pointers.
     if (strcmp(argv[1], "init") == 0) {
 
       if (check_initialized()) {
