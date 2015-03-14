@@ -13,7 +13,6 @@
  *   and written to stderr. We catch some additional errors for you in main.c.
  * - Output to stdout needs to be exactly as specified in the function description.
  * - Only edit this file (beargit.c)
- *   * fs_mkdir(dirname): create directory <dirname>
  *   * fs_rm(filename): delete file <filename>
  *   * fs_mv(src,dst): move file <src> to <dst>, overwriting <dst> if it exists
  *   * fs_cp(src,dst): copy file <src> to <dst>, overwriting <dst> if it exists
