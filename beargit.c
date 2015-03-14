@@ -12,7 +12,6 @@
  * - All error conditions in the function description need to be implemented
  *   and written to stderr. We catch some additional errors for you in main.c.
  * - Output to stdout needs to be exactly as specified in the function description.
- *   * write_string_to_file(filename,str): write <str> to filename (overwriting contents)
  *   * read_string_from_file(filename,str,size): read a string of at most <size> (incl.
  *     NULL character) from file <filename> and store it into <str>. Note that <str>
  *     needs to be large enough to hold that string.
