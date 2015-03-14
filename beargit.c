@@ -408,4 +408,3 @@ int beargit_checkout(const char* arg, int new_branch) {
   read_string_from_file(branch_file, branch_head_commit_id, COMMIT_ID_SIZE);
   return checkout_commit(branch_head_commit_id);
 }
-
