@@ -206,7 +206,7 @@ int beargit_commit_hw1(const char* msg) {
 
 /* beargit status
  *
- * See "Step 1" in the homework 1 spec.
+ * Generates status command.
  *
  */
 int beargit_status() {
@@ -231,7 +231,7 @@ int beargit_status() {
 
 /* beargit log
  *
- * See "Step 4" in the homework 1 spec.
+ * Generates log command.
  *
  */
 int beargit_log() {
