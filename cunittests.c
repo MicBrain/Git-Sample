@@ -226,18 +226,15 @@ int cunittester()
    CU_pSuite pSuite7 = NULL;
    CU_pSuite pSuite8 = NULL;
 
-   /* initialize the CUnit test registry */
    if (CUE_SUCCESS != CU_initialize_registry())
       return CU_get_error();
 
-   /* add a suite to the registry */
    pSuite = CU_add_suite("Suite_1", init_suite, clean_suite);
    if (NULL == pSuite) {
       CU_cleanup_registry();
       return CU_get_error();
    }
 
-   /* Add tests to the Suite #1 */
    if (NULL == CU_add_test(pSuite, "Simple Test #1", simple_sample_test))
    {
       CU_cleanup_registry();
