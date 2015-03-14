@@ -9,12 +9,7 @@
 #undef printf
 #undef fprintf
 
-/* The suite initialization function.
- * You'll probably want to delete any leftover files in .beargit from previous
- * tests, along with the .beargit directory itself.
- *
- * You'll most likely be able to share this across suites.
- */
+/* The suite initialization function. */
 int init_suite(void)
 {
     // preps to run tests by deleting the .beargit directory if it exists
