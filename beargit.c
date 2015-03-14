@@ -259,9 +259,6 @@ int beargit_log() {
   return 0;
 }
 
-
-
-
 int beargit_commit(const char* msg) {
   char current_branch[BRANCHNAME_SIZE];
   read_string_from_file(".beargit/.current_branch", current_branch, BRANCHNAME_SIZE);
@@ -277,14 +274,8 @@ const char* digits = "61c";
 void next_commit_id(char* commit_id) {
   char current_branch[BRANCHNAME_SIZE];
   read_string_from_file(".beargit/.current_branch", current_branch, BRANCHNAME_SIZE);
-  // The first COMMIT_ID_BRANCH_BYTES=10 characters of the commit ID will
-  // be used to encode the current branch number. This is necessary to avoid
-  // duplicate IDs in different branches, as they can have the same pre-
-  // decessor (so next_commit_id has to depend on something else).
   int n = get_branch_number(current_branch);
   for (int i = 0; i < COMMIT_ID_BRANCH_BYTES; i++) {
-    // This translates the branch number into base 3 and substitutes 0 for
-    // 6, 1 for 1 and c for 2.
     commit_id[i] = digits[n%3];
     n /= 3;
   }
