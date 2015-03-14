@@ -12,7 +12,6 @@
  * - All error conditions in the function description need to be implemented
  *   and written to stderr. We catch some additional errors for you in main.c.
  * - Output to stdout needs to be exactly as specified in the function description.
- *   * fs_rm(filename): delete file <filename>
  *   * fs_mv(src,dst): move file <src> to <dst>, overwriting <dst> if it exists
  *   * fs_cp(src,dst): copy file <src> to <dst>, overwriting <dst> if it exists
  *   * write_string_to_file(filename,str): write <str> to filename (overwriting contents)
