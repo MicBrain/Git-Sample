@@ -279,12 +279,9 @@ void next_commit_id(char* commit_id) {
     commit_id[i] = digits[n%3];
     n /= 3;
   }
-  // Use next_commit_id to fill in the rest of the commit ID.
   next_commit_id_hw1(commit_id + COMMIT_ID_BRANCH_BYTES);
 }
 
-// This helper function returns the branch number for a specific branch, or
-// returns -1 if the branch does not exist.
 int get_branch_number(const char* branch_name) {
   FILE* fbranches = fopen(".beargit/.branches", "r");
   int branch_index = -1;
