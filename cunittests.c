@@ -75,44 +75,27 @@ void simple_log_test(void)
     run_commit(&commit_list, "GO BEARS!1");
     run_commit(&commit_list, "GO BEARS!2");
     run_commit(&commit_list, "GO BEARS!3");
-
     retval = beargit_log();
     CU_ASSERT(0==retval);
-
     struct commit* cur_commit = commit_list;
-
     const int LINE_SIZE = 512;
     char line[LINE_SIZE];
-
     FILE* fstdout = fopen("TEST_STDOUT", "r");
     CU_ASSERT_PTR_NOT_NULL(fstdout);
-
     while (cur_commit != NULL) {
       char refline[LINE_SIZE];
-
-      // First line is empty
       CU_ASSERT_PTR_NOT_NULL(fgets(line, LINE_SIZE, fstdout));
       CU_ASSERT(!strcmp(line,"\n"));
-
-      // Second line is commit -- don't check the ID.
       CU_ASSERT_PTR_NOT_NULL(fgets(line, LINE_SIZE, fstdout));
       CU_ASSERT(!strncmp(line,"commit", strlen("commit")));
-
-      // Third line is msg
       sprintf(refline, "    %s\n", cur_commit->msg);
       CU_ASSERT_PTR_NOT_NULL(fgets(line, LINE_SIZE, fstdout));
       CU_ASSERT_STRING_EQUAL(line, refline);
-
       cur_commit = cur_commit->next;
     }
-
-    // Last line is empty
     CU_ASSERT_PTR_NOT_NULL(fgets(line, LINE_SIZE, fstdout));
     CU_ASSERT(!strcmp(line,"\n"));
-
     CU_ASSERT_PTR_NULL(fgets(line, LINE_SIZE, fstdout));
-
-    // It's the end of output
     CU_ASSERT(feof(fstdout));
     fclose(fstdout);
 
