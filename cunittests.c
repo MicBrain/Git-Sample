@@ -6,8 +6,6 @@
 #include "beargit.h"
 #include "util.h"
 
-/* printf/fprintf calls in this tester will NOT go to file. */
-
 #undef printf
 #undef fprintf
 
