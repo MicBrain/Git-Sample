@@ -323,7 +323,7 @@ int beargit_branch() {
 }
 /* beargit checkout
  *
- * See "Step 7" in the homework 1 spec.
+ * Generates checkout command.
  *
  */
 int checkout_commit(const char* commit_id) {
