@@ -300,7 +300,7 @@ int get_branch_number(const char* branch_name) {
 
 /* beargit branch
  *
- * See "Step 6" in the homework 1 spec.
+ * Generates branch command.
  *
  */
 int beargit_branch() {
