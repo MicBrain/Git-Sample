@@ -101,8 +101,8 @@ if (checker == 5) {
 
 /* beargit commit -m <msg>
  *
- * See "Step 3" in the homework 1 spec.
- *
+ * Checks if the commit message contains
+ * the required keyword.
  */
 const char* go_bears = "GO BEARS!";
 int is_commit_msg_ok(const char* msg) {
