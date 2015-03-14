@@ -12,7 +12,6 @@
  * - All error conditions in the function description need to be implemented
  *   and written to stderr. We catch some additional errors for you in main.c.
  * - Output to stdout needs to be exactly as specified in the function description.
- *   * read_string_from_file(filename,str,size): read a string of at most <size> (incl.
  */
 
 /* beargit init
