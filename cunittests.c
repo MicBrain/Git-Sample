@@ -102,7 +102,6 @@ void simple_log_test(void)
     free_commit_list(&commit_list);
 }
 
-// Advanced test for add function
 void first_test(void) {
     int eval;
     eval = beargit_init();
@@ -120,7 +119,6 @@ void first_test(void) {
     CU_ASSERT(0==final);
 }
 
-// Advanced test for remove function
 void second_test(void) {
   int first;
   first = beargit_init();
@@ -137,7 +135,6 @@ void second_test(void) {
   CU_ASSERT(0!=fifth);
 }
 
-// Advanced test for status function
 void third_test(void) {
   int val;
   val = beargit_init();
@@ -153,7 +150,6 @@ void third_test(void) {
   CU_ASSERT(0==d);
 }
 
-// Advanced test for commit function
 void forth_test(void)
 {
   int foo;
@@ -175,7 +171,6 @@ void forth_test(void)
   CU_ASSERT(last == 0);
 }
 
-// Advanced test for log function
 void fifth_test(void) {
   int a;
   a = beargit_init();
@@ -201,7 +196,6 @@ void fifth_test(void) {
   CU_ASSERT(e == 0);
 }
 
-// Advanced test for branch function
 void sixth_test(void) {
   int foo;
   foo = beargit_init();
