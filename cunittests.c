@@ -30,13 +30,6 @@ int clean_suite(void)
  */
 void simple_sample_test(void)
 {
-    // This is a very basic test. Your tests should likely do more than this.
-    // We suggest checking the outputs of printfs/fprintfs to both stdout
-    // and stderr. To make this convenient for you, the tester replaces
-    // printf and fprintf with copies that write data to a file for you
-    // to access. To access all output written to stdout, you can read 
-    // from the "TEST_STDOUT" file. To access all output written to stderr,
-    // you can read from the "TEST_STDERR" file.
     int retval;
     retval = beargit_init();
     CU_ASSERT(0==retval);
