@@ -12,7 +12,6 @@
 /* The suite initialization function. */
 int init_suite(void)
 {
-    // preps to run tests by deleting the .beargit directory if it exists
     fs_force_rm_beargit_dir();
     unlink("TEST_STDOUT");
     unlink("TEST_STDERR");
