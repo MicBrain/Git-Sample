@@ -11,4 +11,4 @@ At its core, beargit is essentially a simpler version of git. It maintains a .be
 
 beargit can track individual files in the current working directory (no subdirectories!).
 
-### 
+### Differences
