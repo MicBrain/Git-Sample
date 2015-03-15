@@ -2,6 +2,7 @@
 
 1. Introduction
 2. Description
+3. Differences between 
 
 
 Beargit is an implementation of a distributed revision control system for managing source code and other files. 
