@@ -24,4 +24,4 @@ beargit can track individual files in the current working directory (no subdirec
 
 ### Files
    Here is the description of implemented files:
-* 
+* beargit.c  - This is the file that contains the implementation of beargit.
