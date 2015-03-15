@@ -26,3 +26,4 @@ beargit can track individual files in the current working directory (no subdirec
    Here is the description of implemented files:
 * beargit.c  - This is the file that contains the implementation of beargit.
 * beargit.h - This file contains declarations of various constructs in beargit.c along with convenient #defines.
+* main.c - 
