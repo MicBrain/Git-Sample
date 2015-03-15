@@ -7,7 +7,7 @@
 
 ### Introduction
 
-   Distributed Version Control allows programmers
+   Distributed Version Control allows programmers to work a given project
 
 Beargit is an implementation of a distributed revision control system for managing source code and other files. 
 
