@@ -27,4 +27,4 @@ beargit can track individual files in the current working directory (no subdirec
 * beargit.c  - This is the file that contains the implementation of beargit.
 * beargit.h - This file contains declarations of various constructs in beargit.c along with convenient #defines.
 * main.c - Contains the main for beargit (which parses command line options and calls into the functions defined in beargit.c).
-* Makefile - 
+* Makefile - This tells the program make how to build your code when you run the make command.
