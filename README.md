@@ -7,7 +7,7 @@
 
 ### Introduction
 
-   Distributed Version Control allows programmers to work a given project without requiring them to share a common network. The software revisions are stored in a distributed revision
+   Distributed Version Control allows programmers to work a given project without requiring them to share a common network. The software revisions are stored in a distributed revision control system.
 
 Beargit is an implementation of a distributed revision control system for managing source code and other files. 
 
