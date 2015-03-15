@@ -1,7 +1,7 @@
 # Git Sample (Beargit)
 
 1. Introduction
-2. 
+2. Description
 
 
 Beargit is an implementation of a distributed revision control system for managing source code and other files. 
