@@ -21,3 +21,5 @@ beargit can track individual files in the current working directory (no subdirec
 * Any commits with a commit message that does not contain "GO BEARS!" (with exactly this capitalization and spelling) will be rejected with an error message.
 * No user, date or other additional information is tracked by beargit. It does not allow to track subdirectories, or files starting with '.'.
 * The rm command only causes beargit to stop tracking a file, but does not delete it from the file system.
+
+### Files
