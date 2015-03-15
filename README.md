@@ -23,3 +23,5 @@ beargit can track individual files in the current working directory (no subdirec
 * The rm command only causes beargit to stop tracking a file, but does not delete it from the file system.
 
 ### Files
+   Here is the description of implemented files:
+* 
