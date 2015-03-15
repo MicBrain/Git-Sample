@@ -13,4 +13,4 @@ beargit can track individual files in the current working directory (no subdirec
 
 ### Differences between beargit and git
 
-   There are some key 
+   There are some key differences between 
