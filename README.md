@@ -14,4 +14,5 @@ beargit can track individual files in the current working directory (no subdirec
 ### Differences between beargit and git
 
    There are some key differences between this version of distributed revision system and git:
+* The only supported commands are init, add, rm, commit, status and log. For each of them, only t
    
