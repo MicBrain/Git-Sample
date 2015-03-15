@@ -18,4 +18,5 @@ beargit can track individual files in the current working directory (no subdirec
 * beargit does not track diffs between files. Instead, each time you make a commit, it simply copies all files that are being tracked into the .beargit/<ID> directory (where <ID> is the commit ID).
 * Commit IDs are not based on cryptographic hash functions, but instead are a fixed sequence of 40-character strings that only contain '6', '1' and 'c'.
 * Any commits with a commit message that does not contain "GO BEARS!" (with exactly this capitalization and spelling) will be rejected with an error message.
-* No user, date or other additional information 
+* No user, date or other additional information is tracked by beargit. It does not allow to track subdirectories, or files starting with '.'.
+* 
