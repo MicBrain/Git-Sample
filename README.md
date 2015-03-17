@@ -25,7 +25,6 @@ beargit can track individual files in the current working directory (no subdirec
 
 
 
-
    There are some key differences between this version of distributed revision system and git:
 * The only supported commands are init, add, rm, commit, status and log. For each of them, only the most basic command line options are supported.
 * beargit does not track diffs between files. Instead, each time you make a commit, it simply copies all files that are being tracked into the .beargit/<ID> directory (where <ID> is the commit ID).
